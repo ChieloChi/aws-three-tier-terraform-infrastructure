@@ -60,6 +60,12 @@ variable "capacity_type" {
   type        = string
   default     = "ON_DEMAND"
 }
+
+variable "cluster_name" {
+  description = "Name of the EKS Cluster"
+  type        = string
+}
+
 variable "eks_version" {
   description = "EKS cluster version"
   type        = string
