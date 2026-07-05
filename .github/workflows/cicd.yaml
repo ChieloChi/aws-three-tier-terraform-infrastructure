@@ -1,9 +1,11 @@
 name: Deploy to AWS with Terraform
 
+# Commented out to prevent automatic deployment to AWS and avoid running cost-incurring tasks.
+# Uncomment the push trigger when you are ready to enable automatic CI/CD deployment again.
 on:
-  push:
-    branches:
-      - main
+  # push:
+  #   branches:
+  #     - main
 permissions:
     contents: write
     id-token: write
